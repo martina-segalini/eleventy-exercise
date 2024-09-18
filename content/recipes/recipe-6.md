@@ -1,11 +1,11 @@
 ---
-title: Pizza
+title: Osso Buco
 tags: 
-  - lunch
-image: /assets/images/pizza.jpg
+  - dinner
+image: /assets/images/carne.jpg
 ---
 
-![Pizza](/assets/images/pizza.jpg)
+![Osso Buco](/assets/images/carne.jpg)
 ### Details
 
 Difficulty: Medium | Time: 1 hour

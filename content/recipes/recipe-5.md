@@ -1,11 +1,11 @@
 ---
-title: Pizza
+title: Melanzane
 tags: 
-  - lunch
-image: /assets/images/pizza.jpg
+  - dinner
+image: /assets/images/parmigiana.jpg
 ---
 
-![Pizza](/assets/images/pizza.jpg)
+![Parmigiana](/assets/images/parmigiana.jpg)
 ### Details
 
 Difficulty: Medium | Time: 1 hour

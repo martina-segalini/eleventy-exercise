@@ -1,11 +1,11 @@
 ---
-title: Pizza
+title: Risotto
 tags: 
-  - lunch
-image: /assets/images/pizza.jpg
+  - dinner
+image: /assets/images/risotto.jpg
 ---
 
-![Pizza](/assets/images/pizza.jpg)
+![Risotto](/assets/images/risotto.jpg)
 ### Details
 
 Difficulty: Medium | Time: 1 hour

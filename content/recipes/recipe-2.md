@@ -1,6 +1,8 @@
 ---
 title: Classic Lasagna
-layout: recipe.njk
+tags: 
+  - lunch
+image: /assets/images/lasagna.jpg
 ---
 
 ![Classic Lasagna](/assets/images/lasagna.jpg)

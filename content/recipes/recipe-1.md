@@ -1,6 +1,8 @@
 ---
 title: Spaghetti alla carbonara
-layout: recipe.njk
+tags: 
+  - lunch
+image: /assets/images/carbonara.jpg
 ---
 
 ![Spaghetti alla Carbonara](/assets/images/carbonara.jpg)

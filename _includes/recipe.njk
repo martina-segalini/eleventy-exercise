@@ -1,5 +1,20 @@
 ---
 layout: base.njk
 ---
-
 {{ content | safe }}
+
+<ul>
+  <h2>Explore also:</h2>
+  {% for recipe in collections.recipe %}
+    {% if recipe.url != page.url %}
+      <li>
+        <a href="{{ recipe.url }}">
+          <h3>{{ recipe.data.title }}</h3>
+        </a>
+        <p>{{ recipe.data.tags }}</p>
+        <img src="{{ recipe.data.image }}" alt="{{ recipe.data.title }}">
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+

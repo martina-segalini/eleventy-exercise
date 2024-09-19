@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(254, 254, 245);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* container */
+main {
+    max-width: 1200px;
+    border: 1px solid;
+    margin: 0 auto 0 auto;
+    padding: 0 50px;
+}
+
+/* general */
+
+
+a {
+    color: rgb(78, 7, 7);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+    transition: ease-in .2ms;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* navigation */
+nav {
+    background-color: #1d1d1d;
+    display: flex; /* Enables flexbox */
+    justify-content: space-between;
+    align-items: center; /* Centers items vertically */
+    padding: 1em; /* Adds some padding */
+  }
+  
+  nav a.logo {
+    margin-right: 2em; /* Adds space between the logo and the navigation links */
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space;
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 1em; /* Adds space between each link */
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline; 
+  }
+  
+
+/* logo */
+
+.logo {
+    animation-name: tomato;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tomato {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* hero */
+
+.hero {
+    height: 100vh;
+
+    background-image: url(/assets/images/hero-home.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    /* Ensure content inside is centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Add an overlay to ensure text visibility (optional) */
+    position: relative;
+}
+
+.hero::before {
+    /* Add a dark overlay for better text contrast (optional) */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust transparency as needed */
+    z-index: 1; /* Make sure it stays below the text */
+  }
+  
+  .hero h1 {
+    color: white;
+    font-size: 3rem; 
+    text-align: center;
+    z-index: 2; /* Ensure the text is above the overlay */
+    position: relative;
+  }

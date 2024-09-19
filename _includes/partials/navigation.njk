@@ -1,7 +1,16 @@
-<nav>
+<nav class="nav">
+  <a href="../content/index/??????????????">
+    <svg
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="200" height="200" class="logo">
+      <!-- Tomato shape (circle) -->
+      <circle
+      cx="50" cy="50" r="30" fill="#FF6347" stroke="black" stroke-width="2"/> <!-- Tomato stem -->
+      <polygon points="45,35 55,35 52,30 50,28 48,30" fill="green"/>
+    </svg>
+  </a>
   <ul>
-    <li><a href="/" class="{% if page.url == '/' %}active-page{% endif %}">Home</a></li>
-    <li><a href="/about/" class="{% if page.url == '/about/' %}active-page{% endif %}">About</a></li>
-</ul>
-
+    <li><a href="/about/"class="{% if page.url == '/about/' %}active-page{% endif %}">About</a></li>
+    <li><a href="/chefs/"class="{% if page.url == '/' %}active-page{% endif %}">Chefs</a></li>
+    <li><a href="/all-recipes/"class="{% if page.url == '/' %}active-page{% endif %}">All recipes</a></li>
+  </ul>
 </nav>

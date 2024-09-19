@@ -3,18 +3,21 @@ layout: base.njk
 ---
 {{ content | safe }}
 
+<h3>Explore also:</h3>
+
 <ul>
-  <h2>Explore also:</h2>
-  {% for recipe in collections.recipe %}
-    {% if recipe.url != page.url %}
-      <li>
-        <a href="{{ recipe.url }}">
-          <h3>{{ recipe.data.title }}</h3>
-        </a>
-        <p>{{ recipe.data.tags }}</p>
-        <img src="{{ recipe.data.image }}" alt="{{ recipe.data.title }}">
-      </li>
-    {% endif %}
+  {# Loop through the tags array and display each tag #}
+  {% for tag in tags %}
+    <li>{{ tag }}</li>
   {% endfor %}
 </ul>
 
+{% for recipe in collections.recipe %}
+  {# Check if the 'tags' array is equal to 'post.data.tags' array by converting both to strings #}
+   
+  {% if recipe.url != page.url and (tags | dump) == (recipe.data.tags | dump) %}
+  <a href="{{ recipe.url }}"> <h2>{{ recipe.data.title }}</h2></a>
+  <img src= "{{ recipe.data.image }}" alt="{{ recipe.data.title }}">
+    {# If the arrays match, display this message #}
+  {% endif %}
+{% endfor %}

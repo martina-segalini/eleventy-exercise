@@ -1,37 +1,56 @@
 ---
-title: Italian Recipes
+title: Project 9
 layout: base.njk
 ---
-
-<h2>Experiment with tradition</h2>
-<p>Italian recipes are a delightful celebration of fresh ingredients and time-honored traditions. From the aromatic
-    herbs of basil and oregano to the rich flavors of tomatoes and garlic, each dish tells a story of regional diversity and
-    culinary passion. Classic recipes like pasta al pomodoro, risotto, and tiramisu showcase the simplicity and elegance of
-    Italian cuisine, where quality ingredients shine through. Whether it's a hearty ragù simmering on the stovetop or a
-    light caprese salad bursting with flavor, Italian cooking emphasizes the joy of sharing meals with loved ones, making
-    every gathering a feast for the senses.
-</p>
-<ul>
-    <h2>Lunch</h2>
-    {# Loop through the posts collection and print the titles with links #}
+<body>
+    <article class="hero">
+      <h1>Change the world, <br>one recipe at a time.</h1>
+      <video class="hero-video" autoplay loop muted playsinline>
+        <source src="assets/videos/hero-video.mp4" type="video/mp4"> Your browser does not support the video tag.
+      </video>
+    </article>
+    <main>
+      <section class="about">
+        <img src="assets/images/sdg.png" alt="SDG 3">
+        <div>
+          <h2>Our project</h2>
+          <p>Project 9 is dedicated to spreading awareness about <strong>balanced diets and healthy nutrition.</strong>
+          <br><br>We believe that starting with just 9 versatile recipes, anyone can transform their eating habits and improve their
+            overall wellness. Our mission is to empower individuals with accessible and nutritious meal ideas that serve as a
+            foundation for long-term dietary change.</p>
+            <a href="/about/" class="button" class=" {% if page.url == '/about/' %}active-page{% endif %}">about us</a>
+        </div>
+      </section>
+      <section class="get-started">
+        <h2>Get started</h2>
+        <div class="cards">
+        {# Loop through the posts collection and print the titles with links #}
     {% for lunch in collections.lunch %}
-        <li>
+        <li class="card">
+            <img src="{{ lunch.data.image }}" alt=" {{ title }}">
             <a href="{{ lunch.url }}">
                 <h3>{{ lunch.data.title }}</h3>
             </a>
-            <p>{{ lunch.data.tags }}</p>
-            <img src="{{ lunch.data.image }}" alt=" {{ title }}"></li>
+            <p>{{ lunch.data.description }}</p>
+            </li>
         {% endfor %}
-    </ul>
-    <ul>
-        <h2>Dinner</h2>
-        {# Loop through the posts collection and print the titles with links #}
-        {% for dinner in collections.dinner %}
-            <li>
-                <a href="{{ dinner.url }}">
-                    <h3>{{ dinner.data.title }}</h3>
-                </a>
-                <p>{{ dinner.data.tags }}</p>
-                <img src="{{ dinner.data.image }}" alt=" {{ title }}"></li>
-            {% endfor %}
-        </ul>
+        </div>
+        <a href="/all-recipes/" class="see-all">See all →</a>
+      </section>
+      <section>
+        <h2>Join our Community!</h2>
+        <div class="community-content">
+        <img src="assets/images/community.jpg" alt="Community Image" class="community-image">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="">
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" name="surname" placeholder="">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="We won't spam anything!">
+          <button class="button" type="submit">Submit</button>
+        </form>
+        </div>
+      </section>
+    </main>
+  </body>

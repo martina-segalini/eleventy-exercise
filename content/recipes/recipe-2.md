@@ -1,11 +1,12 @@
 ---
-title: Classic Lasagna
+title: Grilled Veggie Pizza
 tags: 
   - lunch
 image: /assets/images/lasagna.jpg
+description: A healthier option that doesn't compromise on flavour, with delightful twist.
 ---
 
-![Classic Lasagna](/assets/images/lasagna.jpg)
+![Grilled Veggie Pizza](/assets/images/lasagna.jpg)
 ### Details
 
 Difficulty: Medium | Time: 1 hour

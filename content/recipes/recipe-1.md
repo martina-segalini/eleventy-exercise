@@ -1,11 +1,12 @@
 ---
-title: Spaghetti alla carbonara
+title: Multivitamin Rice Bowl
 tags: 
   - lunch
 image: /assets/images/carbonara.jpg
+description: Try this balanced meal that combines protein, carbs, and vegetables.
 ---
 
-![Spaghetti alla Carbonara](/assets/images/carbonara.jpg)
+![Multivitamin Rice Bowl](/assets/images/carbonara.jpg)
 ### Details
 
 Difficulty: Easy | Time: 30 minutes

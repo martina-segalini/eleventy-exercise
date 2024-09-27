@@ -1,11 +1,12 @@
 ---
-title: Pizza
+title: Shrimp Orzo with Feta
 tags: 
   - lunch
 image: /assets/images/pizza.jpg
+description: Mediterranean-inspired dish that combines succulent shrimp with tender orzo pasta and feta cheese.
 ---
 
-![Pizza](/assets/images/pizza.jpg)
+![Shrimp Orzo with Feta](/assets/images/pizza.jpg)
 ### Details
 
 Difficulty: Medium | Time: 1 hour

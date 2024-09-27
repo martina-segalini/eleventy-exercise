@@ -1,0 +1,100 @@
+---
+title: About
+layout: base.njk
+---
+
+<section class="hero-about">
+    <div class="hero-about-content">
+        <h1>Project 9</h1>
+        <p>Dedicated to spreading awareness about balanced diets and healthy nutrition.</p>
+    </div>
+</section>
+<main>
+    <section class="vision">
+        <div class="container">
+            <h2>Our Vision</h2>
+            <p>We envision a world where everyone has access to nutritious food and understands the importance of a well-balanced
+                diet.We envision a world where everyone has access to nutritious food and understands the importance of a well-balanced
+                diet.We envision a world where everyone has access to nutritious food and understands the importance of a well-balanced
+                diet.</p>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="member">
+                    <img src="assets/images/jane-doe.jpg" alt="Jane Doe">
+                        <h3>Jane Doe</h3>
+                        <p>Founder & Nutritionist</p>
+                    </div>
+                    <div class="member">
+                        <img src="assets/images/john-smith.jpg" alt="John Smith">
+                            <h3>John Smith</h3>
+                            <p>Chef & Recipe Developer</p>
+                        </div>
+                        <div class="member">
+                            <img src="assets/images/emily-johnson.jpg" alt="Emily Johnson">
+                                <h3>Emily Johnson</h3>
+                                <p>Food Scientist & Writer</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="approach">
+                    <div class="container">
+                        <h2>Our Approach</h2>
+                        <div class="approach-items">
+                            <div class="item">
+                                <i class="fas fa-book"></i>
+                                <h3>Education</h3>
+                                <p>Providing accurate, easy-to-understand information about nutrition and health.</p>
+                            </div>
+                            <div class="item">
+                                <i class="fas fa-lightbulb"></i>
+                                <h3>Inspiration</h3>
+                                <p>Sharing delicious, healthy recipes that cater to various dietary needs and preferences.</p>
+                            </div>
+                            <div class="item">
+                                <i class="fas fa-users"></i>
+                                <h3>Community</h3>
+                                <p>Building a supportive network of individuals who share our passion for healthy living.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                 <h2>Join Us</h2>
+                <section class="cta-about">
+                    <div class="column">
+                    <img src="/assets/images/chef.jpg">
+                        <p>Whether you're a seasoned chef or a culinary beginner, we invite you to join as a Content Editor. Jour journey
+                            towards a healthier, more sustainable food culture.</p>
+                            </div>
+                        <form>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="">
+                                <label for="surname">Surname</label>
+                                <input type="text" id="surname" name="surname" placeholder="">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="We won't spam anything!">
+                                        <button class="button" type="submit">Submit</button>
+                                    </form>
+                            </section>
+                            <section>
+                                <h2>Explore Our Recipes</h2>
+                                <div
+                                    class="cards">
+                                    {# Loop through the posts collection and print the titles with links #}
+                                    {% for lunch in collections.lunch %}
+                                        <li class="card">
+                                            <img src="{{ lunch.data.image }}" alt=" {{ title }}">
+                                                <a href="{{ lunch.url }}">
+                                                    <h3>{{ lunch.data.title }}</h3>
+                                                </a>
+                                                <p>{{ lunch.data.description }}</p>
+                                            </li>
+                                        {% endfor %}
+                                    </div>
+                                    <a href="/all-recipes/" class="see-all">See all →</a>
+                                </section>
+                            </main>

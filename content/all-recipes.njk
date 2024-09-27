@@ -1,0 +1,27 @@
+---
+title: All recipes
+layout: base.njk
+---
+
+<div class="cards">
+        {# Loop through the posts collection and print the titles with links #}
+    {% for lunch in collections.lunch %}
+        <li>
+            <a href="{{ lunch.url }}">
+                <h3>{{ lunch.data.title }}</h3>
+            </a>
+            <p>{{ lunch.data.tags }}</p>
+            <img src="{{ lunch.data.image }}" alt=" {{ title }}"></li>
+        {% endfor %}
+     
+  {# Loop through the posts collection and print the titles with links #}
+        {% for dinner in collections.dinner %}
+            <li>
+                <a href="{{ dinner.url }}">
+                    <h3>{{ dinner.data.title }}</h3>
+                </a>
+                <p>{{ dinner.data.tags }}</p>
+                <img src="{{ dinner.data.image }}" alt=" {{ title }}"></li>
+            {% endfor %}
+
+   </div>

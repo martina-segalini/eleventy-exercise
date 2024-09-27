@@ -3,32 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Italian Recipes</title>
+    <title>Project 9</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
-      rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="/assets/css/styles.css" rel="stylesheet">
   </head>
   <body>
-    {% include "partials/navigation.njk" %}
-
-    <article class="hero">
-        <h1>Taste the authentic Italian cuisine.</h1>
-      </article>
-      
-    <main>
-      <article class="projects">
-        <h2>Our Project</h2>
-        <img src="/assets/images/chefs-home.png">
-        <p>We believe that food has the power to bring people together, and our mission is to inspire home cooks worldwide to
-          explore the rich flavors and traditions of Italy. By focusing on fresh, high-quality ingredients and time-honored
-          techniques, we aim to foster a deeper appreciation for authentic Italian cuisine. Our recipes are designed to not only
-          nourish but also create unforgettable moments at the table. Ready to meet the talented chefs behind these dishes?</p>
-      </article>
-    </main>
-    {{ content | safe }}
-    {% include "partials/footer.njk" %}
-  </body>
+  <div class="container">
+  {# Includes the "navigation.njk" file from the "partials" directory, allowing for reusable navigation code. #}
+  {% include "partials/navigation.njk" %} 
+  {# Outputs the "content" variable and marks it as safe, meaning it won't be escaped and will be rendered as HTML. #}
+  {{ content | safe }}
+  {% include "partials/footer.njk" %}
+  </div>
+</body>
 </html>
